@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#cc000000"
+    android:minHeight="48dp"
+    android:orientation="vertical">
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/image_player_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:src="@drawable/player_bottombar_play" />
+
+        <TextView
+            android:id="@+id/text_player_current_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/image_player_play"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            tools:text="05:11" />
+
+        <TextView
+            android:id="@+id/text_player_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/text_player_current_time"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            tools:text="/" />
+
+        <TextView
+            android:id="@+id/text_player_all_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/text_player_tag"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            tools:text="05:11" />
+
+    </RelativeLayout>
+
+</LinearLayout>
